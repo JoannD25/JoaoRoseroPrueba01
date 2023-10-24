@@ -2,6 +2,7 @@ package com.example.joao_rosero_prueba01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.view.View;
@@ -20,9 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Referencias
-        editTextName = findViewById(R.id.editTextName);
-        editTextLastName = findViewById(R.id.editTextLastName);
-        buttonNext = findViewById(R.id.buttonNext);
+
 
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,5 +40,10 @@ public class MainActivity extends AppCompatActivity {
         editTextName.setEnabled(true);
         editTextLastName.setEnabled(true);
 
+    }
+
+    public void onClickSecondActivity(View view){
+        Intent intent = new Intent(this, activity_third.class);
+        startActivity(intent);
     }
 }

@@ -14,8 +14,10 @@ public class activity_second extends AppCompatActivity {
         setContentView(R.layout.activity_second);
     }
 
-    public void onClickSecondActivity(View view){
+    public void onClickMainActivity(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+
 }
