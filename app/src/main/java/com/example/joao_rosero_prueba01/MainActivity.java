@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Referencias
         editTextName = findViewById(R.id.editTextName);
         editTextLastName = findViewById(R.id.editTextLastName);
         buttonNext = findViewById(R.id.buttonNext);
@@ -31,5 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 editTextLastName.setEnabled(true);
             }
         });
+
+    }
+    public  void onClickView(View view){
+        String TextName = editTextName.getText().toString();
+        String TextLastName = editTextLastName.getText().toString();
+
+        editTextName.setEnabled(true);
+        editTextLastName.setEnabled(true);
+
     }
 }
