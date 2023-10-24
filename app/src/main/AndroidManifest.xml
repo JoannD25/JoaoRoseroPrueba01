@@ -16,10 +16,11 @@
             android:name=".activity_third"
             android:exported="false" />
         <activity
-            android:name=".activity_second"
+            android:name=".MainActivity"
+
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity_second"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
